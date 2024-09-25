@@ -6,18 +6,9 @@
     <title>Beatriz & Miguel - Casamento</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        // Função para determinar se é um dispositivo móvel
-        function isMobile() {
-            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        }
-
-        // Função para redirecionar para o Google Maps ou usar o protocolo geo:
+        // Função para abrir o mapa numa nova aba
         function openMap() {
-            if (isMobile()) {
-                window.open("geo:38.988333,-9.250625?q=Quinta+Casa+de+Reguengos", '_blank');
-            } else {
-                window.open("https://www.google.com/maps?q=Quinta+Casa+de+Reguengos+38.988333,-9.250625", '_blank');
-            }
+            window.open("https://www.google.com/maps/place/Quinta+Casa+de+Reguengos/@38.988333,-9.250625,17z", '_blank');
         }
     </script>
 </head>
@@ -44,9 +35,8 @@
 
     <section class="album">
         <h2>Álbum de Fotos</h2>
-        <p>Queremos partilhar este momento especial convosco. Podes adicionar as fotos que tirares durante o casamento aos nossos álbuns colaborativos:</p>
+        <p>Queremos partilhar este momento especial convosco. Podes adicionar as fotos que tirares durante o casamento ao nosso álbum colaborativo:</p>
         <p><a href="https://photos.app.goo.gl/mun82SnVxUJoVctm6" target="_blank">Adicionar Fotos ao Álbum (Google Photos)</a></p>
-        <p><a href="https://www.icloud.com/sharedalbum/#B0e5qXGF1R8Xoca" target="_blank">Adicionar Fotos ao Álbum (Apple Photos)</a></p>
     </section>
 
     <section class="contato">
