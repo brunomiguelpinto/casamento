@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beatriz & Miguel - Casamento</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        // Função para determinar se é um dispositivo móvel
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        // Função para redirecionar para o Google Maps ou usar o protocolo geo:
+        function openMap() {
+            if (isMobile()) {
+                window.open("geo:38.988333,-9.250625?q=Quinta+Casa+de+Reguengos", '_blank');
+            } else {
+                window.open("https://www.google.com/maps?q=Quinta+Casa+de+Reguengos+38.988333,-9.250625", '_blank');
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -15,7 +30,9 @@
     <section class="info">
         <h2>O Nosso Casamento</h2>
         <p><strong>Data:</strong> 6 de Outubro de 2024</p>
-        <p><strong>Local:</strong> <a href="https://www.google.com/maps/dir//R.+Nossa+Sra.+da+Memória,+2665-419+Vila+Franca+do+Rosário/@38.988304,-9.3330259,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd1f2a4eca70ad33:0x5c21fe6037953fa2!2m2!1d-9.250625!2d38.988333?entry=ttu&g_ep=EgoyMDI0MDkyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Quinta Casa de Reguengos</a></p>
+        <p><strong>Local:</strong> 
+            <a href="#" onclick="openMap()">Quinta Casa de Reguengos</a>
+        </p>
         <p><strong>Horário da Cerimónia:</strong> 14:00</p>
     </section>
 
@@ -23,6 +40,12 @@
         <h2>Presentes</h2>
         <p>A vossa presença é o maior presente, mas se desejarem contribuir com algo mais, aqui estão os nossos dados bancários:</p>
         <p><strong>IBAN:</strong> PT50 0018 000352537974020 06</p>
+    </section>
+
+    <section class="album">
+        <h2>Álbum de Fotos</h2>
+        <p>Queremos partilhar este momento especial convosco. Podes adicionar as fotos que tirares durante o casamento ao nosso álbum colaborativo do Google Photos.</p>
+        <p><a href="https://photos.app.goo.gl/mun82SnVxUJoVctm6" target="_blank">Adicionar Fotos ao Álbum</a></p>
     </section>
 
     <section class="contato">
